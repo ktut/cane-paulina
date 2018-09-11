@@ -127,7 +127,13 @@ body {
 
 footer {
     margin-top: 50px;
-    /* border-top: 1px solid grey; */
+    border-top: 1px solid grey;
     padding: 15px;
+}
+
+footer .end-logo {
+    display: block;
+    max-width: 87.5px;
+    margin: 20px auto 40px;
 }
 
