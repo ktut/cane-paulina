@@ -14,7 +14,7 @@ body {
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 3rem;
     line-height: 100%;
     font-weight: 400;
 }
@@ -115,18 +115,10 @@ section:first-of-type {
 
 /* LAYOUT */
 
-#range-contain {
-    padding: 0 25px;
-}
-
-#range,
-#range-display {
-    max-width: 300px;
-    margin: 25px auto 15px;
-}
-
-#range-display {
-    text-align: center;
+.lead-logo {
+    display: block;
+    max-width: 175px;
+    margin: 0 auto 40px;
 }
 
 body {
@@ -138,11 +130,4 @@ footer {
     /* border-top: 1px solid grey; */
     padding: 15px;
 }
-
-/* UI CHANGES */
-
-.no-ui {
-    background: white;
-}
-
 
