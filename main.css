@@ -36,7 +36,8 @@ h2 {
 }
 
 p,
-th {
+th,
+td {
     font-family: 'Lato', sans-serif;
     font-size: 1rem;
     font-weight: 300;
@@ -133,7 +134,7 @@ th {
 }
 
 th {
-    text-transform: uppercase;
+    font-weight: 700;
 }
 
 /* LAYOUT */
@@ -160,3 +161,6 @@ footer .end-logo {
     margin: 20px auto 40px;
 }
 
+@media screen and (max-width: 600px) {
+
+}
