@@ -24,7 +24,7 @@ h1:first-of-type {
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     line-height: 130%;
     font-weight: 300;
 }
@@ -35,7 +35,8 @@ h2 {
     margin-bottom: 30px;
 }
 
-p {
+p,
+th {
     font-family: 'Lato', sans-serif;
     font-size: 1rem;
     font-weight: 300;
@@ -104,7 +105,7 @@ a:hover {
 
 section {
     margin: 0 auto;
-    max-width: 600px;
+    max-width: 800px;
     padding: 15px;
 }
 
@@ -112,6 +113,28 @@ section:first-of-type {
     padding-top: 25px;
 }
 
+table {
+    margin-bottom: 40px;
+}
+
+table,
+tr {
+    width: 100%;;
+}
+
+thead {
+    font-weight: 700;
+    border-bottom: 1px solid black;
+}
+
+td,
+th {
+    padding: 10px 4px;
+}
+
+th {
+    text-transform: uppercase;
+}
 
 /* LAYOUT */
 
