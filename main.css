@@ -119,7 +119,7 @@ a:hover {
 }
 
 .p-contain > div {
-    height: 750px;
+    min-height: 750px;
 }
 
 .p-left {
