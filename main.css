@@ -9,11 +9,12 @@ html {
     font-size: 17px;
 }
 
-body {
+/* body {
     background: #eee;
-}
+} */
 
 h1 {
+    font-family: 'Libre Baskerville', serif;
     font-size: 3rem;
     line-height: 100%;
     font-weight: 400;
@@ -24,16 +25,17 @@ h1:first-of-type {
 }
 
 h2 {
-    font-size: 1.4rem;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.3rem;
     line-height: 130%;
     font-weight: 300;
 }
 
 h1,
 h2 {
-    font-family: 'Libre Baskerville', serif;
     margin-bottom: 30px;
 }
+
 
 p,
 th,
@@ -104,10 +106,48 @@ a:hover {
     color: red;
 }
 
+
+
+/* LAYOUT */
+
+.p-contain {
+    display: -webkit-flex;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 2684px;
+}
+
+.p-contain > div {
+    height: 750px;
+}
+
+.p-left {
+    flex: 1 1 30%;
+    background-size: cover;
+    background-position: 100% 50%;
+    background-image: url(./assets/p-left.png);
+    max-width: 1147px;;
+}
+
+.p-center {
+    flex: 0 0 400px;
+    background-size: cover;
+    background-position: 50% 83%;
+    background-image: url(./assets/p-center.png);
+}
+
+.p-right {
+    flex: 1 1 30%;
+    background-size: cover;
+    background-position: 0% 50%;
+    background-image: url(./assets/p-right.png);
+    max-width: 635px;
+}
+
 section {
+    padding: 5px;
     margin: 0 auto;
-    max-width: 800px;
-    padding: 15px;
 }
 
 section:first-of-type {
@@ -137,12 +177,21 @@ th {
     font-weight: 700;
 }
 
-/* LAYOUT */
+.contact-box {
+    max-width: 250px;
+    margin: 20px auto;
+    text-align: center;
+    background: #222;
+    color: white;
+    padding: 20px 25px 15px;
+}
 
-.lead-logo {
-    display: block;
-    max-width: 175px;
-    margin: 0 auto 40px;
+.contact-box p {
+    font-size: 1.2rem;
+}
+
+.contact-box a {
+    color: red;
 }
 
 body {
@@ -151,16 +200,60 @@ body {
 
 footer {
     margin-top: 50px;
-    border-top: 1px solid grey;
     padding: 15px;
 }
 
-footer .end-logo {
-    display: block;
-    max-width: 87.5px;
-    margin: 20px auto 40px;
+footer .logos {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
 }
 
-@media screen and (max-width: 600px) {
+footer .logos > div {
+    margin: 20px;
+}
 
+footer .logos > div img {
+    width: 100%;
+}
+
+footer .logos .lead-logo {
+    width: 175px;
+}
+
+footer .logos .end-logo {
+    width: 87.5px;
+}
+
+@media screen and (max-width: 500px) {
+    footer .logos {
+        display: block;
+        text-align: center;
+    }
+
+    footer .logos > div {
+        display: inline-block;
+    }
+
+    .p-contain > div {
+        height: auto;
+    }
+
+    .p-left,
+    .p-right {
+        display: none;
+    }
+
+    .p-center {
+        background-image: none;
+    }
+
+    .p-contain {
+        display: block;
+    }
+
+    footer {
+        margin-top: 15px;
+        margin-bottom: 40px;
+    }
 }
