@@ -345,3 +345,10 @@ footer {
         margin: 0;
     }
 }
+
+
+/* extra css to hack styling for Hello bar modal */
+
+#f-builtin-email {
+    color: black !important;
+}
