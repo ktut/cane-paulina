@@ -275,7 +275,7 @@ footer {
     display: -webkit-flex;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
 
     padding: 25px 30px 25px;
     background: black;
