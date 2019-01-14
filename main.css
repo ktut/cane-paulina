@@ -230,6 +230,30 @@ th {
     text-transform: uppercase;
 }
 
+tr.rented {
+    background: rgba(0,0,0,0.25);
+}
+
+tr.rented td {
+    text-decoration: line-through;
+    color: #bbb !important;
+}
+
+tr.rented td a {
+    color: #bbb !important;
+    pointer-events: none;
+}
+
+tr.rented:after {
+    content: "RENTED";
+    font-family: 'Lato', sans-serif;
+    color: #eee;
+    display: block;
+    width: 100%;
+    padding: 4px;
+    text-align: center;
+}
+
 img {
     width: 100%;
 }
